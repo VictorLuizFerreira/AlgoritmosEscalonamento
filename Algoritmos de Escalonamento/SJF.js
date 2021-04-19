@@ -61,13 +61,16 @@ function average_wt(processos){
 
 
 function SJF(processos){
-  
+   
     for (let i = 0; i < processos.length; i++){
         for (let j = 0; j < processos.length - 1; j++){
             if (processos[j][2] > processos[j+1][2]){
+                //Criei uma variável extra para armazenar o valor inicial de "processos[j]".
+                //Depois utilizei o "processos[j]" para armazenar o valor de "processos[j+1]".
+                //Por fim, igualei a variável criada para armazenar o valor final".
                 let a = processos[j]
                 processos[j] = processos[j+1]
-                processos[j + 1] = a
+                processos[j+1] = a
             }
         }
     }

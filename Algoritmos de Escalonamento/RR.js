@@ -112,3 +112,4 @@ for (let proc = 0; proc < processos.length; proc++){
 
 console.log("Average Waiting Time: ", avg_wt)
 console.log("Average Turn-Around Time: ", avg_tat)
+
